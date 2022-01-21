@@ -1,9 +1,7 @@
 nosex=""
 nosey=""
 function preload() {
-
 }
-
 function setup() {
     canvas = createCanvas(600, 500);
     canvas.center();
@@ -26,7 +24,10 @@ function getposes(results) {
     }
 }
 function draw() {
-image(video,0,0,600,500)
+image(video,0,0,600,500);
+fill("red");
+stroke("red");
+circle(nosex,nosey,30);
 }
 
 function takesnapshot() {
